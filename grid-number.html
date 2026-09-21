@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Gallery</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            outline: 1px solid black;
+
+            display: grid;
+
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(150px, 1fr)
+            );
+
+            gap: 30px;
+            padding: 20px;
+            
+        }
+
+        .container > div {
+            outline: 1px dashed black;
+            height: 100px;
+            overflow: hidden;
+            background-color: blue;
+            
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+   <body>
+
+    <div class="container">
+
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+
+    </div>
+
+</body>
+
+</body>
+</html>

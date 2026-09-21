@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Centered Cards</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: lightgray;
+
+            display: flex;
+            justify-content: center;   /* Center horizontally */
+            align-items: center;       /* Center vertically */
+            height: 100vh;
+        }
+
+        .container {
+            border: 2 px dotted black;
+            display: flex;
+            justify-content:center;  /* Space between cards */
+            gap: 20px;  /* Add space between cards */
+            flex-wrap: wrap;
+            margin-right: 7%;
+             margin-bottom: 3%;
+             border-width: 100px;
+            
+        }
+        .login{
+            width:200px ;
+            height: 300px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .card {
+            flex: 1;  /* Each card takes equal space */
+            background: white;
+            border : 1px solid black;
+            padding: 20px;
+            box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+            min-width: 300px;
+            width: 200px;
+            height: 300px;
+            align-items: center;
+            justify-content: center;
+        
+            
+          
+           
+            
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="login">
+            <h5>login </h5>
+            <input type="text" placeholder="username">
+            <input type="text" placeholder="password">
+        </div>
+
+       
+    </div>
+
+</body>
+</html>

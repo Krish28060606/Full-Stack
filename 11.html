@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Percentage Circle</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .percentage {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+
+            background: conic-gradient(
+                rgb(31, 178, 214) 87%,
+                grey 87%
+            );
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .percentage::before {
+            content: "87%";
+
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+
+            background-color: black;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="percentage"></div>
+
+</body>
+</html>

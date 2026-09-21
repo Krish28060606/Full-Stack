@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Google Font</title>
+
+    <style>
+        
+        #one {
+            color: blue;
+        }
+
+        .two {
+            color: rgb(2, 255, 2);
+        }
+
+        li[for="label"] {
+            color: yellow;
+        }
+
+        span {
+            color: rgb(202, 199, 213);
+        }
+
+        ul>li.two>span {
+            color: blueviolet;
+        }
+        ul>li{
+            color: beige;
+        }
+        li:hover{
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+
+        <li class="two">universal</li>
+        <li id="one">id</li>
+
+        <li class="two">
+            class
+            <span>class</span>
+        </li>
+
+        <li for="label">Atribute</li>
+        <li>
+            Element
+            <span>Ei</span>
+        </li>
+        <li>combinator</li>
+        <li>pseudo class</li>
+        <li>pseudo Element</li>
+    </ul>
+</body>
+
+</html>

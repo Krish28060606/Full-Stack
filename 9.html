@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gradient</title>
+
+    <style>
+        .container {
+            display: flex;
+            gap: 30px;
+            
+        }
+
+        .box1, .box2, .box3 {
+            height: 300px;
+            width: 300px;
+        }
+
+        .box1 {
+            background: linear-gradient(45deg, blue, red);
+        }
+
+        .box2 {
+            background: radial-gradient(
+                circle at center in hsl longer hue,
+                red 0,
+                blue,
+                green 100%
+            );
+        }
+
+        .box3 {
+            background: conic-gradient(red 0deg, orange 90deg, yellow 180deg, green 270deg, blue 360deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div>
+            <p>Linear Gradient</p>
+            <div class="box1"></div>
+        </div>
+
+        <div>
+            <p>Radial Gradient</p>
+            <div class="box2"></div>
+        </div>
+
+        <div>
+            <p>Conic Gradient</p>
+            <div class="box3"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>

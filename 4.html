@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        /* ================= SIDEBAR ================= */
+
+        .sidebar {
+            width: 220px;
+            height: 100vh;
+            background: #222;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding-top: 20px;
+        }
+
+        .item {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 18px 25px;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+
+        .item:hover {
+            background: #00bcd4;
+        }
+
+        /* ================= MAIN CONTENT ================= */
+
+        .main {
+            margin-left: 220px;
+            padding: 30px;
+        }
+
+        .main h1 {
+            text-align: center;
+            font-size: 50px;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        /* ================= DASHBOARD CARDS ================= */
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+
+        .stats-card {
+            width: 220px;
+            height: 150px;
+            background: #00bcd4;
+            color: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+            transition: .3s;
+        }
+
+        .stats-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .stats-card h2 {
+            margin-bottom: 10px;
+        }
+
+        .stats-card p {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        /* ================= PRODUCTS ================= */
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            width: 250px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+            transition: .3s;
+            text-align: center;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card h2 {
+            margin-top: 15px;
+            color: #333;
+        }
+
+        .price {
+            color: green;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 12px 0;
+        }
+
+        .product-card button {
+            margin-bottom: 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .product-card button:hover {
+            background: #0056b3;
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media(max-width:768px) {
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .main {
+                margin-left: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+        <a href="#" class="item">Home</a>
+        <a href="#" class="item">Profile</a>
+        <a href="#" class="item">Products</a>
+        <a href="#" class="item">Contact</a>
+    </div>
+
+    <!-- Main -->
+
+    <div class="main">
+
+        <h1>Dashboard</h1>
+
+        <!-- Dashboard Cards -->
+
+        <div class="cards">
+
+            <div class="stats-card">
+                <h2>Users</h2>
+                <p>150</p>
+            </div>
+
+            <div class="stats-card">
+                <h2>Orders</h2>
+                <p>82</p>
+            </div>
+
+            <div class="stats-card">
+                <h2>Revenue</h2>
+                <p>₹45,000</p>
+            </div>
+
+            <div class="stats-card">
+                <h2>Products</h2>
+                <p>64</p>
+            </div>
+
+        </div>
+
+        <!-- Product Cards -->
+
+        <div class="products">
+
+            <div class="product-card">
+                <img src="pr1.avif" alt="Headphones">
+                <h2>Headphones</h2>
+                <p class="price">$19</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="pr2.jpg" alt="Beauty">
+                <h2>Beauty</h2>
+                <p class="price">$34</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="pr3.jpg" alt="Ear Buds">
+                <h2>Ear Buds</h2>
+                <p class="price">$23</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="pr4.jpg" alt="Drink">
+                <h2>Drink</h2>
+                <p class="price">$12</p>
+                <button>Buy Now</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
